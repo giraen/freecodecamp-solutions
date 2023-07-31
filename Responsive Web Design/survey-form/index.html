@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>freeCodeCamp Survey Form</title>
+</head>
+
+<body>
+    <!-- TITLE FOR THE SURVEY FORM -->
+    <h1 id = "title">freeCodeCamp Survey Form</h1>
+    <p id = "description">Thank you for taking the time to answer this form. Your response will be evaluated for improving the platform.</p>
+
+    <!-- FORM STARTS HERE -->
+    <form id = "survey-form">
+
+    <!-- PERSONAL INFORMATION SECTION -->
+      <fieldset>
+        <label for = "name" id = "name-label">Name <input type = "text" required id = "name" placeholder = "Name" /></label>
+        <label for = "email" id = "email-label">Email <input type = "email" required id = "email" placeholder = "your-email@domain.com" /></label>
+        <label for = "number " id = "number-label">Age <input type = "number" min = "18" max = "120" id = "number" placeholder = "Age" /></label>
+      </fieldset>
+
+    <!-- DROPDOWN SECTION -->
+      <fieldset>
+        <label for = "dropdown">Please select your primary reason for using freeCodeCamp?
+          <select id = "dropdown">
+            <option value = "">(select one)</option>
+            <option value = "1">For resume</option>
+            <option value = "2">For academic purposes</option>
+            <option value = "3">For self-development</option>
+            <option value = "4">For fun</option>
+            <option value = "5">Others</option>
+          </select>
+        </label>
+      </fieldset>
+
+    <!-- ACCOUNT TYPE SECTION -->
+      <fieldset>
+        <p>Select your account type:
+        <label for = "basic-acc"><input type = "radio" name = "acc-type" id = "basic-acc" checked class = "inline" value = "basic"/>Basic Account</label>
+        <label for = "premium-acc"><input type = "radio" name = "acc-type" id = "basic-acc" class = "inline" value = "premium"/>Premium Account</label>
+      </fieldset>
+
+    <!-- CHECKBOXES SECTION -->
+      <fieldset>
+        <p>What do you like about freeCodeCamp? <span>(Check all that may apply)</span></p>
+        <label><input type = "checkbox" value = "like-cert" class = "inline" value = "cert"/>Certifications</label>
+        <label><input type = "checkbox" value = "like-news" class = "inline" value = "news"/>News</label>
+        <label><input type = "checkbox" value = "like-free" class = "inline" value = "free"/>Free Courses, Tutorials, and Learning Materials</label>
+        <label><input type = "checkbox" value = "like-others" class = "inline" value = "others"/>Others</label>
+      </fieldset>
+
+    <!-- TEXTAREA SECTION -->
+      <fieldset>
+        <p>Do you have any recommendations or suggestions?</p>
+        <textarea placeholder = "Type something in here..."></textarea>
+      </fieldset>
+
+    <!-- SUBMIT BUTTON -->
+      <input type="submit" value="Submit" id = "submit" />
+    </form>
+
+    <footer>
+        <p>Background from <a href = "https://bgjar.com/">BGjar</a></p>
+    </footer>
+</body>
+</html>

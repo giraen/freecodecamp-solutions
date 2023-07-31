@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  
+#title, #description {
+    margin: 1.5rem auto;
+    text-align: center;
+    color: white;
+  }
+  
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1005%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(10%2c 10%2c 35%2c 1)'%3e%3c/rect%3e%3cpath d='M1076.14%2c461.934C1117.469%2c461.714%2c1161.296%2c449.472%2c1181.042%2c413.164C1200.176%2c377.981%2c1182.592%2c337.382%2c1162.816%2c302.556C1142.696%2c267.123%2c1116.871%2c227.283%2c1076.14%2c228.427C1036.392%2c229.544%2c1017.328%2c272.728%2c997.509%2c307.201C977.788%2c341.503%2c951.358%2c379.019%2c969.283%2c414.293C988.219%2c451.557%2c1034.342%2c462.157%2c1076.14%2c461.934' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M964.48085062357 359.2443349922115L1118.1597422294788 409.1776337702131 1168.0930410074802 255.4987421643043 1014.4141494015715 205.56544338630272z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M628.2085793964465 514.8181084572104L674.1290720781775 411.67899321824297 570.98995683921 365.7585005365119 525.0694641574789 468.8976157754794z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1027.5867859275154 109.88618206508725L1151.5893346265202 175.97117115058006 1149.4456499517062 53.15955838202744z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M773.6830994381929 140.1339793366465L894.3334302063322 157.0902775299204 790.6393976314669 19.483648568507164z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1362.307692595869 559.5571813640427L1466.2642376583974 541.2268376482835 1447.9338939426384 437.270292585755 1343.9773488801097 455.60063630151416z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M586.0892745704173-0.21578899207133873L646.8632672305682 93.56349534873478 692.7245159277239 7.311031190164002z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M76.83913420102328 599.8894379268532L215.31631094143674 592.6321566125029 208.0590296270864 454.1549798720895 69.58185288667295 461.41226118643976z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M646.4833957694859 298.70039748225065L499.0971029894828 332.7272042930726 533.1239098003048 480.11349707307573 680.5102025803079 446.0866902622538z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1366.374%2c630.845C1413.761%2c629.285%2c1450.044%2c595.258%2c1475.423%2c555.21C1503.331%2c511.172%2c1527.668%2c459.176%2c1504.88%2c412.284C1479.787%2c360.65%2c1423.774%2c329.83%2c1366.374%2c330.817C1310.529%2c331.778%2c1261.919%2c367.498%2c1235.884%2c416.912C1211.546%2c463.106%2c1216.949%2c518.249%2c1244.138%2c562.824C1270.163%2c605.49%2c1316.424%2c632.489%2c1366.374%2c630.845' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M246.2380991208466 321.5173113628132L371.58403939025214 325.89448804968754 375.96121607712644 200.548547780282 250.61527580772093 196.17137109340769z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M428.571%2c318.598C477.871%2c316.423%2c526.659%2c297.751%2c551.135%2c254.901C575.438%2c212.353%2c565.602%2c161.54%2c543.163%2c117.98C518.171%2c69.464%2c482.995%2c21.031%2c428.571%2c16.967C368.203%2c12.46%2c310.003%2c45.783%2c279.939%2c98.326C250.063%2c150.54%2c252.083%2c216.742%2c285.731%2c266.608C316.107%2c311.625%2c374.317%2c320.991%2c428.571%2c318.598' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M851.4976266009463 52.64282932213217L908.4552450850512 62.685994217779005 895.041183186469-27.772015956201642z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1005'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  }
+  
+form {
+    margin: 1.5em auto;
+    padding: 10px;
+    width: 65vw;
+    background-color: rgba(3,3,10,0.7);
+    color: #FFFFFF;
+    border-radius: 20px;
+  }
+  
+fieldset {
+    border: none;
+    padding: 1.5rem 1rem;
+    border-bottom: 3px solid #3b3b4f;
+  }
+  
+fieldset:last-of-type {
+    border-bottom: none;
+    padding: 1.5rem 1rem 0.4rem 1rem;
+  }
+  
+label, input {
+    display: block;
+    margin: 10px 0; 
+  }
+  
+input, select {
+    border-radius: 4px;
+  }
+  
+input, select, textarea {
+    background-color: #0a0a23;
+    border: #0a0a23 1px solid;
+    color: #FFFFFF;
+  }
+
+select {
+    margin: 10px 0 0 0;
+}
+  
+.inline {
+    display: inline-block;
+    margin: 0 5px 0 0;
+  }
+  
+#name, #email, #number {
+    height: 27px;
+    width: 100%;
+    padding: 5px 10px;
+  }
+  
+select {
+    height: 27px;
+    padding: 5px 10px;
+  }
+  
+input[type="submit"] {
+    width: 60%;
+    height: 50px;
+    font-size: 15px;
+    margin: 1.1em auto;
+    background-color: #232339;
+    border: #9d9da7 1px solid;
+  }
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+textarea {
+    width: 100%;
+    min-height: 5em;
+    height: 10em;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    padding: 10px;
+    resize: vertical;
+  }
+
+footer, a {
+    color: #ffffff;
+  }
+
+footer {
+    margin: 25px 10px 10px 10px;
+  }
