@@ -5,103 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 
-    <title>Arduino Documentation</title>
+    <title>Basics of Arduino</title>
 </head>
 <body>
     <!-- NAVBAR SHOULD BE AT THE LEFT SIDE OF DEVICES LIKE LAPTOP OR DESKTOP -->
     <nav id="navbar">
-        <header>Arduino Documentation</header>
+        <header>Basics of Arduino (Documentation)</header>
+
         <!-- THEY SHOULD BE DIRECT TO THE HEADER OF EACH SECTION USING ID -->
         <ul>
-            <li><a href="#intro" class="nav-link">Introduction</a></li>
-            <li><a href="#getstarted" class="nav-link">Getting Started</a></li>
-            <li><a href="#funcs" class="nav-link">Functions</a></li>
-            <li><a href="#vars" class="nav-link">Variables</a></li>
-            <li><a href="#struc" class="nav-link">Structure</a></li>
-            <li><a href="#refer" class="nav-link">References</a></li>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#Getting_Started" class="nav-link">Getting Started</a></li>
+            <li><a href="#Getting_to_know_the_Basics_of_Arduino_Structure" class="nav-link">Getting to know the Basics of Arduino Structure</a></li>
+            <li><a href="#Data_Types_and_Variables" class="nav-link">Data Types and Variables</a></li>
+            <li><a href="#Printing_Hello_World" class="nav-link">Printing Hello World</a></li>
+            <li><a href="#References" class="nav-link">References</a></li>
         </ul>
     </nav>
 
     <main id="main-doc">
         <!-- SECTION ELEMENT SHOULD BE ATLEAST 5 -->
-        <section class = "main-section" id = "#">
-            <header id = "intro">Introduction</header>
-            <!-- TODO: should contain at least ten p elements total (not each) -->
-            <!-- CONTENT CREATED WITH CHATGPT -->
-            <p>Arduino, a remarkable platform for electronics enthusiasts, beckons with its versatility and accessibility. As a microcontroller platform, Arduino acts as a gateway to transform imaginative concepts into tangible realities. Whether you're a curious beginner or a seasoned innovator, Arduino's open-ended nature welcomes a myriad of creative possibilities.</p>
-            <p>At its heart, Arduino boasts an array of microcontroller boards that facilitate seamless connections to sensors, motors, and diverse components, laying the foundation for a multitude of projects. From simple LED displays that catch the eye to intricate interactive systems that blur the line between art and technology, Arduino's adaptability knows no bounds.</p>
-            <p>Guided by its user-friendly interface and enriched by a thriving community, Arduino encourages you to embark on a journey into the realms of coding, electronics, and robotics. The platform's extensive collection of sensors, modules, and shields offers endless combinations to explore. Step into the world of Arduino, and unlock the potential to shape the future through innovation and hands-on learning.</p>
-            <p></p>
-            <p></p>
-            <p></p>
+        <section class = "main-section" id = "Introduction">
+            <header class = "section-header" id = "Introduction">Introduction</header>
+            <article>
+                <!-- TODO: should contain at least ten p elements total (not each) -->
+                <!-- CONTENT CREATED WITH CHATGPT -->
+                <p>Arduino, a remarkable platform for electronics enthusiasts, beckons with its versatility and accessibility. As a microcontroller platform, Arduino acts as a gateway to transform imaginative concepts into tangible realities. Whether you're a curious beginner or a seasoned innovator, Arduino's open-ended nature welcomes a myriad of creative possibilities.</p>
+                <p>At its heart, Arduino boasts an array of microcontroller boards that facilitate seamless connections to sensors, motors, and diverse components, laying the foundation for a multitude of projects. From simple LED displays that catch the eye to intricate interactive systems that blur the line between art and technology, Arduino's adaptability knows no bounds.</p>
+                <p>Guided by its user-friendly interface and enriched by a thriving community, Arduino encourages you to embark on a journey into the realms of coding, electronics, and robotics. The platform's extensive collection of sensors, modules, and shields offers endless combinations to explore. Step into the world of Arduino, and unlock the potential to shape the future through innovation and hands-on learning.</p>
+                <p></p>
+            </article>
         </section>
 
-        <section class = "main-section" id = "#">
-            <header id = "getstarted">Getting Started</header>
-            <p>Before heading out to programming with Arduino, you should first have the following:</p>
-            <ol>
-                <li>Arduino Boards (e.g. Arduino Uno, Arduino Mega, and Arduino Nano)</li>
-                <li>Arduino IDE</li>
-                <li>USB Cable</li>
-                <li>Electronic Components (e.g. resistors, LEDs, and sensors)</li>
-            </ol>
+        <section class = "main-section" id = "Getting_Started">
+            <header class = "section-header" id = "Getting_Started">Getting Started</header>
 
-            <p>In this documentation, we will assume that you uses Arduino Uno for reasons that it is often used by beginners in Arduino. Further, this documentation will only focus on the programming aspect of Arduino. Documentations, for instance, of Arduino boards' schematic diagram and other technical aspects will not be covered but you are welcome to visit <a href = "arduino.cc">Arduino's official website</a>.</p>
+            <article>
+                <p>Before heading out to programming with Arduino, you should first have the following:</p>
+                <ol>
+                    <li>Arduino Boards (e.g. Arduino Uno, Arduino Mega, and Arduino Nano)</li>
+                    <li>Arduino IDE</li>
+                    <li>USB Cable</li>
+                    <li>Electronic Components (e.g. resistors, LEDs, and sensors)</li>
+                </ol>
 
-            <!-- TODO: should contain at least five code elements total (not each) -->
-            <code></code>
-            <code></code>
-            <code></code>
-            <code></code>
-            <code></code>
+                <p>In this documentation, we will assume that you uses Arduino Uno for reasons that it is often used by beginners in Arduino. Further, this documentation will only focus on the programming aspect of Arduino. Documentations, for instance, of Arduino boards' schematic diagram and other technical aspects will not be covered but you are welcome to visit <a href = "arduino.cc">Arduino's official website</a>.</p>
+
+                <p>For the installation of Arduino IDE, go visit their <a href = "https://www.arduino.cc/en/software">website</a> (<a href = "https://www.arduino.cc/en/software">https://www.arduino.cc/en/software</a>).</p>
+            </article>
         </section>
 
-        <section class = "main-section" id = "#">
-            <header id = "funcs">Functions</header>
-            <p>Currently, there are 55 functions for Arduino. They are grouped into the following:</p>
-            <!-- TODO: Make the list items have <a> tag -->
-            <ul>
-                <li>Digital I/O</li>
-                <li>Analog I/O</li>
-                <li>Advanced I/O</li>
-                <li>Time</li>
-                <li>Math</li>
-                <li>Trigonometry</li>
-                <li>Characters</li>
-                <li>Random Numbers</li>
-                <li>Bits and Bytes</li>
-                <li>External Interrupts</li>
-                <li>Interrupts</li>
-            </ul>
-            <p>Since this documentation assumes that you're using Arduino, some functions have been omitted. However, you can always refer to the <a href = "https://www.arduino.cc/reference/en/">Arduino Language reference</a>.</p>
-            
-            <!-- TODO: Finish the docs on this part and continue for other parts too.
-                  Also add ID for h3 -->
-            <h3>Digital I/O</h3>
-            <ul>
-                <li>
-                    <h4>digitalRead()</h4>
-                </li>
+        <section class = "main-section" id = "Getting_to_know_the_Basics_of_Arduino_Structure">
+            <header class = "section-header" id = "Getting_to_know_the_Basics_of_Arduino_Structure">Getting to know the Basics of Arduino Structure</header>
 
-                <li>
-                    <h4>digitalWrite()</h4>
-                </li>
-                <li>
-                    <h4>pinMode()</h4>
-                </li>
-            </ul>
+            <article>
+                <p>Upon opening the Arduino IDE, you will be met with the following codes:</p>
+
+                <code class = "code-block">
+                    void setup() {<br>
+                    // put your setup code here, to run once:<br><br>
+                    }<br><br>
+                
+                    void loop() {<br>
+                    // put your main code here, to run repeatedly:<br><br>
+                    }
+                </code>
+
+                <p>From this, we can see two types of function, that is the <code class = "cinp">setup()</code> and <code class = "cinp">loop()</code>. Codes within the <code class = "cinp">setup()</code> will only run once while codes within the <code class = "cinp">loop()</code> will run indefinitely.</p>
+                <p>Generally, codes within the <code class = "cinp">setup()</code> are for setting up the mode for pins and initialization of some functions such as Serial communication and I2C LCD. This is because it only needs to be executed once. While in <code class = "cinp">loop()</code>, it often contains codes or functions that is necessary to be executed all the time, such as lighting patterns for LEDs, printing for Serial communication or I2C LCD, controlling the motors, and many more.</p>
+            </article>
         </section>
 
-        <section class = "main-section" id = "#">
-            <header id = "vars">Variables</header>
+        <section class = "main-section" id = "Data_Types_and_Variables">
+            <header class = "section-header" id = "Data_Types_and_Variables">Data Types and Variables</header>
+
+            <article>
+                <p>In arduino programming, we have different types of data. However, we will only focus on the main ones since they are fundamentally necessary for us to learn.</p>
+                <!-- COWRITTEN WITH CHATGPT -->
+                <ul>
+                    <li>
+                        <code class = "cinp">int</code>
+                        <p>Represents whole numbers such as 1, 2, 3 and so on. It is a 16-bit data type, capable of storing values from -32,768 to 32,767.</p>
+                    </li>
+
+                    <li>
+                        <code class = "cinp">float</code>
+                        <p>A data type that allows you to store numbers with decimal places, that is for precision. For increased precision, you might want to use <code class = "cinp">double</code>. Take note that it takes more memory for higher precision.</p>
+                    </li>
+
+                    <li>
+                        <code class = "cinp">byte</code>
+                        <p>Similar to <code class = "cinp">int</code>, it represents a single byte value, which ranges only from 0 to 255.</p>
+                    </li>
+
+                    <li>
+                        <code class = "cinp">bool</code>
+                        <p>Accepts the value of true or false </p>
+                    </li>
+
+                    <li>
+                        <code class = "cinp">char</code>
+                        <p>Represents a single character using the ASCII encoding. It can store a single character like 'a', '1', etc.</p>
+                    </li>
+
+                    <li>
+                        <code class = "cinp">String</code>
+                        <p>Similar to <code class = "cinp">char</code> but it can work with <i>string of characters</i>, that is words, senteces, or phrases.</p>
+                    </li>
+                </ul>
+
+                <p>For declaring and initialization of variables in arduino, we follow this syntax.</p>
+
+                <code  class = "code-block">data_type variable_name = value;</code>
+
+                <p>Take note that you cannot have a variable name that has spaces within it. A good example is of declaring and initializing a variable is like this.</p>
+
+                <code class = "code-block">int countUp = 0;</code>
+
+                <p>You can also just declare the variable above with no value like this.</p>
+
+                <code class = "code-block">int countUp;</code>
+            </article>
         </section>
 
-        <section class = "main-section" id = "#">
-            <header id = "struc">Structure</header>
+        <section class = "main-section" id = "Printing_Hello_World">
+            <header class = "section-header" id = "Printing_Hello_World">Printing Hello World</header>
+
+            <article>
+                <p>There are many ways to print hello world in arduino, the classic one is using the Serial. If you explored your IDE, you should be able to see the Serial Monitor in the upper right.</p>
+                <p>To start, we will initialize our Serial with the begin function. Make sure that it is placed within the squiggly brackets of <code class = "cinp">setup()</code>.</p>
+
+                <code class = "code-block">Serial.begin(9600);</code>
+
+                <p>This line of code follows this syntax.</p>
+
+                <code class = "code-block">Serial.begin(baudrate);</code>
+
+                <p><b>Baudrate</b> refers to the data transmission of your arduino to your laptop or desktop computer. 9600 is the common baudrate. Increasing the baudrate will result to faster transmission while decreasing it will result to a slower transmission. Take note that <strong>it should match the baudrate in code and in the serial monitor</strong> because mismatch in baudrate between the code and serial monitor will result to random gibberish of random characters.</p>
+                <p>After that, we can use the print and/or println function inside the squiggly brackets of <code class = "cinp">loop()</code>.</p>
+
+                <code class = "code-block">Serial.print("Hello world");</code>
+                
+                <code class = "code-block">Serial.println("Hello world");</code>
+
+                <p>The difference between the two is that the print() will always print whatever inside of it within the same line. Therefore <code class = "cinp">Serial.print("Hello world");</code> is also the same as <code class = "cinp">Serial.print("Hello"); Serial.print(" "); Serial.print("World");</code></p>
+                <p>On the other hand, println() will print whatever inside of it to a new line.</p>
+                <p>Take note that if it is a string or a character, as long as it contains letters, it must be always within the double quotation marks.</p>
+            </article>
         </section>
 
-        <section class = "main-section" id = "#">
-            <header id = "refer">References</header>
+        <section class = "main-section" id = "References">
+            <header class = "section-header" id = "References">References</header>
+
+            <article>
+                <ul>
+                    <li>All the code came from <a href = "arduino.cc">Arduino's official website</a></li>
+                    <li>Some content are generated and cowritten with ChatGPT, check the commenting in this webpage</li>
+                </ul>
+            </article>
         </section>
     </main>
 </body>
