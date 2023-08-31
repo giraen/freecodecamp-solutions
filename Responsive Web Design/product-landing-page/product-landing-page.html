@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Pet Rocks!</title>
+</head>
+<body>
+    <header id="header">
+        <img src="logo.webp" alt="logo" id="header-img">
+
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#preorder" class="nav-link">Pre-order</a></li>
+                <li><a href="#demonstration" class="nav-link">How It Works</a></li>
+                <li><a href="#benefits" class="nav-link">Benefits</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="wrapper">
+        <section id="demonstration">
+            <h2>Pet Rock on Action!</h2>
+            <video src="Pet Rock OP.mp4" id="video" controls muted></video>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/30vxbqnv6Ds?si=1s-xUAI87gEt660e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id = "video"></iframe> -->
+        </section>
+
+        <section id = "preorder">
+            <h2>Pre-order your own Pet Rock!</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" name="email" id="email" placeholder="Enter your email address here">
+                <input type="submit" value="SUBMIT" id="submit">
+            </form>
+        </section>
+
+        <section id="benefits">
+            <div class="grid" id = "unique-friend">
+                <div class="description">
+                    <h2 class="desc-title">Unique Friend</h2>
+                    <p class="desc-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quod aliquam magnam sed quia impedit sequi maxime nostrum quaerat minus.</p>
+                </div>
+            </div>
+
+            <div class="grid" id = "sturdy-strong">
+                <div class="description">
+                    <h2 class="desc-title">Sturdy and Strong</h2>
+                    <p class="desc-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa alias dolores debitis, quam aut ad veritatis? Quod sunt amet aliquam adipisci, provident delectus consequatur aut.</p>
+                </div>
+            </div>
+            
+            <div class="grid" id = "low-maintenance">
+                <div class="description">
+                    <h2 class="desc-title">Low Maintenance</h2>
+                    <p class="desc-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maiores illum quo molestiae voluptatem voluptas doloremque alias eum excepturi repudiandae quos commodi, optio, officia ab eveniet quidem perspiciatis hic deserunt.</p>
+                </div>
+            </div>
+
+            <div class="grid icon" id = "unique-friend-icon">
+                <i class="fa-solid fa-user-group"></i>
+            </div>
+
+            <div class="grid icon" id = "sturdy-strong-icon">
+                <i class="fa-solid fa-hand-fist"></i>
+            </div>
+
+            <div class="grid icon" id = "low-maintenance-icon">
+                <i class="fa-solid fa-money-bill"></i>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://kit.fontawesome.com/fc9e82c370.js" crossorigin="anonymous"></script>
+</body>
+</html>
