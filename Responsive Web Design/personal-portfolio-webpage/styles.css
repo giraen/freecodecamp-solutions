@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Prompt&family=Roboto+Slab&display=swap');
-
 :root {
     --storm: #565c5e;
     --forest-green: #455954;
@@ -20,9 +18,14 @@ html {
 
 nav {
     width: 100vw;
-    background-color: var(--storm);
+    background: linear-gradient(
+        171deg,
+        rgba(255,255,255,1) 0%, 
+        var(--storm) 69%
+        );
     padding: 15px 50px;
     position: fixed;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 #navlist {
@@ -43,14 +46,187 @@ nav {
 }
 
 section {
-    height: 100vh;
     width: 100%;
 }
 
 #welcome-section {
+    height: 100vh;
     background: linear-gradient(
         rgba(86, 92, 94, 0.9), 
-        rgba(86, 92, 94, 0.8) 40%, 
+        rgba(86, 92, 94, 0.9) 1.5%, 
+        rgba(86, 92, 94, 0.8) 2%, 
         var(--forest-green)
         );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome-section h1 {
+    color: var(--linen);
+    font-size: 7rem;
+    font-family: 'Prompt', sans-serif;
+    font-style: oblique;
+}
+
+#welcome-section h1 span {
+    color: var(--leather);
+}
+
+#welcome-section p {
+    color: var(--blue);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3.5rem;
+    font-style: italic;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 20px;
+    padding-top: 65px;
+    background: linear-gradient(
+        var(--forest-green),
+        var(--forest-green) 20%,
+        var(--leather) 
+    );
+    height: 110vh;
+}
+
+#projects h2 {
+    color: var(--linen);
+    font-size: 5rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0 150px;
+
+}
+
+.project-tile {
+    background: linear-gradient(
+        166deg, 
+        rgba(181,194,199,1) 0%, 
+        rgba(86,92,94,1) 100%
+        );
+    border: 2px solid #3b3f41;
+    padding: 20px 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.project-img {
+    width: 80%;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+}
+
+.project-tile p {
+    color: var(--linen);
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px auto 0 auto;
+}
+
+.project-tile a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacts {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        var(--leather),
+        var(--leather) 20%,
+        var(--forest-green) 
+    );
+    row-gap: 25px;
+}
+
+#contacts h2 {
+    color: var(--linen);
+    font-size: 5rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#socials-container {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 0;
+}
+
+#socials-container a {
+    font-family: 'Roboto Slab', serif;
+    color: var(--linen);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#socials-container a:hover {
+    color: #ccc;
+}
+
+@media only screen and (max-width: 768px) {
+    #projects {
+        height: 200vh;
+    }
+
+    #grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #navlist {
+        justify-content: space-evenly;
+    }
+
+    #welcome-section h1 {
+        font-size: 4rem;
+    }
+
+    #welcome-section p {
+        font-size: 2rem;
+    }
+
+    #projects h2 {
+        font-size: 2.5rem;
+    }
+
+    .project-tile {
+        border: 2px solid #3b3f41;
+        padding: 20px 15px;
+        width: 80vw;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+
+    #contacts h2 {
+        font-size: 2.5rem;
+    }
+
+    #socials-container{
+        column-gap: 0;
+        flex-flow: column;
+        row-gap: 20px;
+    }
 }
